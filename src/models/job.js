@@ -6,7 +6,7 @@ let JobSchema = new Schema({
     type:     String,
     required: true
   },
-  applyUrl: String,
+  url:      String,
   type:     String,
   pay:      String,
   status:   String,
