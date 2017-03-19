@@ -87,7 +87,7 @@ export default({config, db}) => {
       if(err){
         res.send(err);
       }
-      console.log('here after the comapny found', company);
+
       let newJob  = new Job();
       //set the new job properties
       newJob.title    = req.body.title;
@@ -110,6 +110,17 @@ export default({config, db}) => {
           res.json({message: 'Company job saved'});
         });
       });
+    });
+  });
+
+  //get jobs for a specific company id
+  //'/v1/company/jobs/:id'
+  api.get('/jobs/:id', (req, res) => {
+    Job.find({company: req.params.id}, (err, jobs) => {
+      if(err) {
+        res.send(err);
+      }
+      res.json(jobs);
     });
   });
 
