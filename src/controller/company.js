@@ -3,13 +3,16 @@ import { Router } from 'express';
 import Company    from '../models/company';
 import Job        from '../models/job';
 
+//use this to lock down any route by putting 'authenticate' between the route path and (req, res)
+import { authenticate } from '../middleware/authMiddleware';
+
 export default({config, db}) => {
   let api = Router();
 
   //CRUD - Creaate Read Update Delete
 
   //'/v1/company/add' - create
-  api.post('/add', (req, res) => {
+  api.post('/add', authenticate, (req, res) => {
     let newCompany = new Company();
 
     newCompany.name     = req.body.name;
