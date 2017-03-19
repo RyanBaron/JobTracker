@@ -3,6 +3,7 @@ import config       from '../config';
 import middleware   from '../middleware';
 import initializeDb from '../db';
 import job          from '../controller/company';
+import account      from '../controller/account';
 
 let router = express();
 
@@ -15,6 +16,7 @@ initializeDb(db => {
 
   //api routes vw (/v1)
   router.use('/company', job({config, db}));
+  router.use('/account', account({config, db}));
 
 });
 
