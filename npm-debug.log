@@ -1,0 +1,443 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ryan/.nvm/versions/node/v6.10.0/bin/node',
+1 verbose cli   '/home/ryan/.nvm/versions/node/v6.10.0/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '--save-dev',
+1 verbose cli   'nodemon',
+1 verbose cli   'eslint',
+1 verbose cli   'babel-cli',
+1 verbose cli   'babel-core',
+1 verbose cli   'bable-eslint',
+1 verbose cli   'babel-preset-es2015',
+1 verbose cli   'babel-preset-stage-0' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData nodemon
+8 silly fetchPackageMetaData eslint
+9 silly fetchPackageMetaData babel-cli
+10 silly fetchPackageMetaData babel-core
+11 silly fetchPackageMetaData bable-eslint
+12 silly fetchPackageMetaData babel-preset-es2015
+13 silly fetchPackageMetaData babel-preset-stage-0
+14 silly fetchNamedPackageData nodemon
+15 silly mapToRegistry name nodemon
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry data Result {
+18 silly mapToRegistry   raw: 'nodemon',
+18 silly mapToRegistry   scope: null,
+18 silly mapToRegistry   escapedName: 'nodemon',
+18 silly mapToRegistry   name: 'nodemon',
+18 silly mapToRegistry   rawSpec: '',
+18 silly mapToRegistry   spec: 'latest',
+18 silly mapToRegistry   type: 'tag' }
+19 silly mapToRegistry uri https://registry.npmjs.org/nodemon
+20 silly fetchNamedPackageData eslint
+21 silly mapToRegistry name eslint
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry data Result {
+24 silly mapToRegistry   raw: 'eslint',
+24 silly mapToRegistry   scope: null,
+24 silly mapToRegistry   escapedName: 'eslint',
+24 silly mapToRegistry   name: 'eslint',
+24 silly mapToRegistry   rawSpec: '',
+24 silly mapToRegistry   spec: 'latest',
+24 silly mapToRegistry   type: 'tag' }
+25 silly mapToRegistry uri https://registry.npmjs.org/eslint
+26 silly fetchNamedPackageData babel-cli
+27 silly mapToRegistry name babel-cli
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'babel-cli',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'babel-cli',
+30 silly mapToRegistry   name: 'babel-cli',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/babel-cli
+32 silly fetchNamedPackageData babel-core
+33 silly mapToRegistry name babel-core
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry data Result {
+36 silly mapToRegistry   raw: 'babel-core',
+36 silly mapToRegistry   scope: null,
+36 silly mapToRegistry   escapedName: 'babel-core',
+36 silly mapToRegistry   name: 'babel-core',
+36 silly mapToRegistry   rawSpec: '',
+36 silly mapToRegistry   spec: 'latest',
+36 silly mapToRegistry   type: 'tag' }
+37 silly mapToRegistry uri https://registry.npmjs.org/babel-core
+38 silly fetchNamedPackageData bable-eslint
+39 silly mapToRegistry name bable-eslint
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry data Result {
+42 silly mapToRegistry   raw: 'bable-eslint',
+42 silly mapToRegistry   scope: null,
+42 silly mapToRegistry   escapedName: 'bable-eslint',
+42 silly mapToRegistry   name: 'bable-eslint',
+42 silly mapToRegistry   rawSpec: '',
+42 silly mapToRegistry   spec: 'latest',
+42 silly mapToRegistry   type: 'tag' }
+43 silly mapToRegistry uri https://registry.npmjs.org/bable-eslint
+44 silly fetchNamedPackageData babel-preset-es2015
+45 silly mapToRegistry name babel-preset-es2015
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'babel-preset-es2015',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'babel-preset-es2015',
+48 silly mapToRegistry   name: 'babel-preset-es2015',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-es2015
+50 silly fetchNamedPackageData babel-preset-stage-0
+51 silly mapToRegistry name babel-preset-stage-0
+52 silly mapToRegistry using default registry
+53 silly mapToRegistry registry https://registry.npmjs.org/
+54 silly mapToRegistry data Result {
+54 silly mapToRegistry   raw: 'babel-preset-stage-0',
+54 silly mapToRegistry   scope: null,
+54 silly mapToRegistry   escapedName: 'babel-preset-stage-0',
+54 silly mapToRegistry   name: 'babel-preset-stage-0',
+54 silly mapToRegistry   rawSpec: '',
+54 silly mapToRegistry   spec: 'latest',
+54 silly mapToRegistry   type: 'tag' }
+55 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-stage-0
+56 verbose request uri https://registry.npmjs.org/eslint
+57 verbose request no auth needed
+58 info attempt registry request try #1 at 6:50:26 PM
+59 verbose request id b0586e1442483323
+60 http request GET https://registry.npmjs.org/eslint
+61 verbose request uri https://registry.npmjs.org/babel-cli
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 6:50:26 PM
+64 http request GET https://registry.npmjs.org/babel-cli
+65 verbose request uri https://registry.npmjs.org/babel-core
+66 verbose request no auth needed
+67 info attempt registry request try #1 at 6:50:26 PM
+68 http request GET https://registry.npmjs.org/babel-core
+69 verbose request uri https://registry.npmjs.org/bable-eslint
+70 verbose request no auth needed
+71 info attempt registry request try #1 at 6:50:26 PM
+72 http request GET https://registry.npmjs.org/bable-eslint
+73 verbose request uri https://registry.npmjs.org/babel-preset-es2015
+74 verbose request no auth needed
+75 info attempt registry request try #1 at 6:50:26 PM
+76 http request GET https://registry.npmjs.org/babel-preset-es2015
+77 verbose request uri https://registry.npmjs.org/babel-preset-stage-0
+78 verbose request no auth needed
+79 info attempt registry request try #1 at 6:50:26 PM
+80 http request GET https://registry.npmjs.org/babel-preset-stage-0
+81 verbose request uri https://registry.npmjs.org/nodemon
+82 verbose request no auth needed
+83 info attempt registry request try #1 at 6:50:26 PM
+84 verbose etag W/"58ca3629-30e87"
+85 verbose lastModified Thu, 16 Mar 2017 06:52:25 GMT
+86 http request GET https://registry.npmjs.org/nodemon
+87 http 200 https://registry.npmjs.org/babel-cli
+88 verbose headers { server: 'nginx/1.10.1',
+88 verbose headers   'content-type': 'application/json',
+88 verbose headers   'last-modified': 'Mon, 13 Mar 2017 02:18:22 GMT',
+88 verbose headers   etag: 'W/"58c6016e-161a6"',
+88 verbose headers   'content-encoding': 'gzip',
+88 verbose headers   'cache-control': 'max-age=300',
+88 verbose headers   'content-length': '6526',
+88 verbose headers   'accept-ranges': 'bytes',
+88 verbose headers   date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+88 verbose headers   via: '1.1 varnish',
+88 verbose headers   age: '251',
+88 verbose headers   connection: 'keep-alive',
+88 verbose headers   'x-served-by': 'cache-ord1726-ORD',
+88 verbose headers   'x-cache': 'HIT',
+88 verbose headers   'x-cache-hits': '2',
+88 verbose headers   'x-timer': 'S1489881026.679806,VS0,VE0',
+88 verbose headers   vary: 'Accept-Encoding' }
+89 silly get cb [ 200,
+89 silly get   { server: 'nginx/1.10.1',
+89 silly get     'content-type': 'application/json',
+89 silly get     'last-modified': 'Mon, 13 Mar 2017 02:18:22 GMT',
+89 silly get     etag: 'W/"58c6016e-161a6"',
+89 silly get     'content-encoding': 'gzip',
+89 silly get     'cache-control': 'max-age=300',
+89 silly get     'content-length': '6526',
+89 silly get     'accept-ranges': 'bytes',
+89 silly get     date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+89 silly get     via: '1.1 varnish',
+89 silly get     age: '251',
+89 silly get     connection: 'keep-alive',
+89 silly get     'x-served-by': 'cache-ord1726-ORD',
+89 silly get     'x-cache': 'HIT',
+89 silly get     'x-cache-hits': '2',
+89 silly get     'x-timer': 'S1489881026.679806,VS0,VE0',
+89 silly get     vary: 'Accept-Encoding' } ]
+90 verbose get saving babel-cli to /home/ryan/.npm/registry.npmjs.org/babel-cli/.cache.json
+91 verbose correctMkdir /home/ryan/.npm correctMkdir not in flight; initializing
+92 http 404 https://registry.npmjs.org/bable-eslint
+93 verbose headers { 'content-type': 'application/json',
+93 verbose headers   'cache-control': 'max-age=0',
+93 verbose headers   'content-length': '2',
+93 verbose headers   'accept-ranges': 'bytes',
+93 verbose headers   date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+93 verbose headers   via: '1.1 varnish',
+93 verbose headers   age: '0',
+93 verbose headers   connection: 'keep-alive',
+93 verbose headers   'x-served-by': 'cache-ord1726-ORD',
+93 verbose headers   'x-cache': 'MISS',
+93 verbose headers   'x-cache-hits': '0',
+93 verbose headers   'x-timer': 'S1489881026.679870,VS0,VE91',
+93 verbose headers   vary: 'Accept-Encoding' }
+94 silly get cb [ 404,
+94 silly get   { 'content-type': 'application/json',
+94 silly get     'cache-control': 'max-age=0',
+94 silly get     'content-length': '2',
+94 silly get     'accept-ranges': 'bytes',
+94 silly get     date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+94 silly get     via: '1.1 varnish',
+94 silly get     age: '0',
+94 silly get     connection: 'keep-alive',
+94 silly get     'x-served-by': 'cache-ord1726-ORD',
+94 silly get     'x-cache': 'MISS',
+94 silly get     'x-cache-hits': '0',
+94 silly get     'x-timer': 'S1489881026.679870,VS0,VE91',
+94 silly get     vary: 'Accept-Encoding' } ]
+95 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/bable-eslint
+95 silly fetchPackageMetaData     at makeError (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+95 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+95 silly fetchPackageMetaData     at Request._callback (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+95 silly fetchPackageMetaData     at Request.self.callback (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+95 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+95 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+95 silly fetchPackageMetaData     at Request.<anonymous> (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+95 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+95 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+95 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:969:12)
+95 silly fetchPackageMetaData  error for bable-eslint { Error: Registry returned 404 for GET on https://registry.npmjs.org/bable-eslint
+95 silly fetchPackageMetaData     at makeError (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+95 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+95 silly fetchPackageMetaData     at Request._callback (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+95 silly fetchPackageMetaData     at Request.self.callback (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+95 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+95 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+95 silly fetchPackageMetaData     at Request.<anonymous> (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+95 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+95 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+95 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:969:12) pkgid: 'bable-eslint', statusCode: 404, code: 'E404' }
+96 http 200 https://registry.npmjs.org/eslint
+97 verbose headers { server: 'nginx/1.10.1',
+97 verbose headers   'content-type': 'application/json',
+97 verbose headers   'last-modified': 'Sat, 18 Mar 2017 15:27:44 GMT',
+97 verbose headers   etag: 'W/"58cd51f0-6ba17"',
+97 verbose headers   'content-encoding': 'gzip',
+97 verbose headers   'cache-control': 'max-age=300',
+97 verbose headers   'content-length': '26354',
+97 verbose headers   'accept-ranges': 'bytes',
+97 verbose headers   date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+97 verbose headers   via: '1.1 varnish',
+97 verbose headers   age: '85',
+97 verbose headers   connection: 'keep-alive',
+97 verbose headers   'x-served-by': 'cache-ord1743-ORD',
+97 verbose headers   'x-cache': 'HIT',
+97 verbose headers   'x-cache-hits': '2',
+97 verbose headers   'x-timer': 'S1489881026.684079,VS0,VE0',
+97 verbose headers   vary: 'Accept-Encoding' }
+98 silly get cb [ 200,
+98 silly get   { server: 'nginx/1.10.1',
+98 silly get     'content-type': 'application/json',
+98 silly get     'last-modified': 'Sat, 18 Mar 2017 15:27:44 GMT',
+98 silly get     etag: 'W/"58cd51f0-6ba17"',
+98 silly get     'content-encoding': 'gzip',
+98 silly get     'cache-control': 'max-age=300',
+98 silly get     'content-length': '26354',
+98 silly get     'accept-ranges': 'bytes',
+98 silly get     date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+98 silly get     via: '1.1 varnish',
+98 silly get     age: '85',
+98 silly get     connection: 'keep-alive',
+98 silly get     'x-served-by': 'cache-ord1743-ORD',
+98 silly get     'x-cache': 'HIT',
+98 silly get     'x-cache-hits': '2',
+98 silly get     'x-timer': 'S1489881026.684079,VS0,VE0',
+98 silly get     vary: 'Accept-Encoding' } ]
+99 verbose get saving eslint to /home/ryan/.npm/registry.npmjs.org/eslint/.cache.json
+100 verbose correctMkdir /home/ryan/.npm correctMkdir not in flight; initializing
+101 http 200 https://registry.npmjs.org/babel-core
+102 verbose headers { server: 'nginx/1.10.1',
+102 verbose headers   'content-type': 'application/json',
+102 verbose headers   'last-modified': 'Mon, 13 Mar 2017 02:18:28 GMT',
+102 verbose headers   etag: 'W/"58c60174-74897"',
+102 verbose headers   'content-encoding': 'gzip',
+102 verbose headers   'cache-control': 'max-age=300',
+102 verbose headers   'content-length': '26436',
+102 verbose headers   'accept-ranges': 'bytes',
+102 verbose headers   date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+102 verbose headers   via: '1.1 varnish',
+102 verbose headers   age: '136',
+102 verbose headers   connection: 'keep-alive',
+102 verbose headers   'x-served-by': 'cache-ord1734-ORD',
+102 verbose headers   'x-cache': 'HIT',
+102 verbose headers   'x-cache-hits': '1',
+102 verbose headers   'x-timer': 'S1489881026.679781,VS0,VE0',
+102 verbose headers   vary: 'Accept-Encoding' }
+103 silly get cb [ 200,
+103 silly get   { server: 'nginx/1.10.1',
+103 silly get     'content-type': 'application/json',
+103 silly get     'last-modified': 'Mon, 13 Mar 2017 02:18:28 GMT',
+103 silly get     etag: 'W/"58c60174-74897"',
+103 silly get     'content-encoding': 'gzip',
+103 silly get     'cache-control': 'max-age=300',
+103 silly get     'content-length': '26436',
+103 silly get     'accept-ranges': 'bytes',
+103 silly get     date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+103 silly get     via: '1.1 varnish',
+103 silly get     age: '136',
+103 silly get     connection: 'keep-alive',
+103 silly get     'x-served-by': 'cache-ord1734-ORD',
+103 silly get     'x-cache': 'HIT',
+103 silly get     'x-cache-hits': '1',
+103 silly get     'x-timer': 'S1489881026.679781,VS0,VE0',
+103 silly get     vary: 'Accept-Encoding' } ]
+104 verbose get saving babel-core to /home/ryan/.npm/registry.npmjs.org/babel-core/.cache.json
+105 verbose correctMkdir /home/ryan/.npm correctMkdir not in flight; initializing
+106 http 200 https://registry.npmjs.org/babel-preset-es2015
+107 verbose headers { server: 'nginx/1.10.1',
+107 verbose headers   'content-type': 'application/json',
+107 verbose headers   'last-modified': 'Mon, 13 Mar 2017 02:19:06 GMT',
+107 verbose headers   etag: 'W/"58c6019a-ed80"',
+107 verbose headers   'content-encoding': 'gzip',
+107 verbose headers   'cache-control': 'max-age=300',
+107 verbose headers   'content-length': '5255',
+107 verbose headers   'accept-ranges': 'bytes',
+107 verbose headers   date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+107 verbose headers   via: '1.1 varnish',
+107 verbose headers   age: '244',
+107 verbose headers   connection: 'keep-alive',
+107 verbose headers   'x-served-by': 'cache-ord1725-ORD',
+107 verbose headers   'x-cache': 'HIT',
+107 verbose headers   'x-cache-hits': '2',
+107 verbose headers   'x-timer': 'S1489881026.774917,VS0,VE0',
+107 verbose headers   vary: 'Accept-Encoding' }
+108 silly get cb [ 200,
+108 silly get   { server: 'nginx/1.10.1',
+108 silly get     'content-type': 'application/json',
+108 silly get     'last-modified': 'Mon, 13 Mar 2017 02:19:06 GMT',
+108 silly get     etag: 'W/"58c6019a-ed80"',
+108 silly get     'content-encoding': 'gzip',
+108 silly get     'cache-control': 'max-age=300',
+108 silly get     'content-length': '5255',
+108 silly get     'accept-ranges': 'bytes',
+108 silly get     date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+108 silly get     via: '1.1 varnish',
+108 silly get     age: '244',
+108 silly get     connection: 'keep-alive',
+108 silly get     'x-served-by': 'cache-ord1725-ORD',
+108 silly get     'x-cache': 'HIT',
+108 silly get     'x-cache-hits': '2',
+108 silly get     'x-timer': 'S1489881026.774917,VS0,VE0',
+108 silly get     vary: 'Accept-Encoding' } ]
+109 verbose get saving babel-preset-es2015 to /home/ryan/.npm/registry.npmjs.org/babel-preset-es2015/.cache.json
+110 verbose correctMkdir /home/ryan/.npm correctMkdir not in flight; initializing
+111 http 304 https://registry.npmjs.org/nodemon
+112 verbose headers { date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+112 verbose headers   via: '1.1 varnish',
+112 verbose headers   'cache-control': 'max-age=300',
+112 verbose headers   etag: 'W/"58ca3629-30e87"',
+112 verbose headers   age: '0',
+112 verbose headers   connection: 'keep-alive',
+112 verbose headers   'x-served-by': 'cache-ord1726-ORD',
+112 verbose headers   'x-cache': 'HIT',
+112 verbose headers   'x-cache-hits': '1',
+112 verbose headers   'x-timer': 'S1489881026.860375,VS0,VE19',
+112 verbose headers   vary: 'Accept-Encoding' }
+113 silly get cb [ 304,
+113 silly get   { date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+113 silly get     via: '1.1 varnish',
+113 silly get     'cache-control': 'max-age=300',
+113 silly get     etag: 'W/"58ca3629-30e87"',
+113 silly get     age: '0',
+113 silly get     connection: 'keep-alive',
+113 silly get     'x-served-by': 'cache-ord1726-ORD',
+113 silly get     'x-cache': 'HIT',
+113 silly get     'x-cache-hits': '1',
+113 silly get     'x-timer': 'S1489881026.860375,VS0,VE19',
+113 silly get     vary: 'Accept-Encoding' } ]
+114 verbose etag https://registry.npmjs.org/nodemon from cache
+115 verbose get saving nodemon to /home/ryan/.npm/registry.npmjs.org/nodemon/.cache.json
+116 verbose correctMkdir /home/ryan/.npm correctMkdir not in flight; initializing
+117 http 200 https://registry.npmjs.org/babel-preset-stage-0
+118 verbose headers { server: 'nginx/1.10.1',
+118 verbose headers   'content-type': 'application/json',
+118 verbose headers   'last-modified': 'Thu, 02 Mar 2017 21:14:09 GMT',
+118 verbose headers   etag: 'W/"58b88b21-3eaa"',
+118 verbose headers   'content-encoding': 'gzip',
+118 verbose headers   'cache-control': 'max-age=300',
+118 verbose headers   'content-length': '2216',
+118 verbose headers   'accept-ranges': 'bytes',
+118 verbose headers   date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+118 verbose headers   via: '1.1 varnish',
+118 verbose headers   age: '0',
+118 verbose headers   connection: 'keep-alive',
+118 verbose headers   'x-served-by': 'cache-ord1733-ORD',
+118 verbose headers   'x-cache': 'HIT',
+118 verbose headers   'x-cache-hits': '1',
+118 verbose headers   'x-timer': 'S1489881026.860223,VS0,VE19',
+118 verbose headers   vary: 'Accept-Encoding' }
+119 silly get cb [ 200,
+119 silly get   { server: 'nginx/1.10.1',
+119 silly get     'content-type': 'application/json',
+119 silly get     'last-modified': 'Thu, 02 Mar 2017 21:14:09 GMT',
+119 silly get     etag: 'W/"58b88b21-3eaa"',
+119 silly get     'content-encoding': 'gzip',
+119 silly get     'cache-control': 'max-age=300',
+119 silly get     'content-length': '2216',
+119 silly get     'accept-ranges': 'bytes',
+119 silly get     date: 'Sat, 18 Mar 2017 23:50:26 GMT',
+119 silly get     via: '1.1 varnish',
+119 silly get     age: '0',
+119 silly get     connection: 'keep-alive',
+119 silly get     'x-served-by': 'cache-ord1733-ORD',
+119 silly get     'x-cache': 'HIT',
+119 silly get     'x-cache-hits': '1',
+119 silly get     'x-timer': 'S1489881026.860223,VS0,VE19',
+119 silly get     vary: 'Accept-Encoding' } ]
+120 verbose get saving babel-preset-stage-0 to /home/ryan/.npm/registry.npmjs.org/babel-preset-stage-0/.cache.json
+121 verbose correctMkdir /home/ryan/.npm correctMkdir not in flight; initializing
+122 silly rollbackFailedOptional Starting
+123 silly rollbackFailedOptional Finishing
+124 silly runTopLevelLifecycles Finishing
+125 silly install printInstalled
+126 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/bable-eslint
+126 verbose stack     at makeError (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+126 verbose stack     at CachingRegistryClient.<anonymous> (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+126 verbose stack     at Request._callback (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+126 verbose stack     at Request.self.callback (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+126 verbose stack     at emitTwo (events.js:106:13)
+126 verbose stack     at Request.emit (events.js:191:7)
+126 verbose stack     at Request.<anonymous> (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+126 verbose stack     at emitOne (events.js:96:13)
+126 verbose stack     at Request.emit (events.js:188:7)
+126 verbose stack     at IncomingMessage.<anonymous> (/home/ryan/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:969:12)
+127 verbose statusCode 404
+128 verbose pkgid bable-eslint
+129 verbose cwd /home/ryan/Desktop/projects/JobTracker
+130 error Linux 4.2.0-27-generic
+131 error argv "/home/ryan/.nvm/versions/node/v6.10.0/bin/node" "/home/ryan/.nvm/versions/node/v6.10.0/bin/npm" "i" "--save-dev" "nodemon" "eslint" "babel-cli" "babel-core" "bable-eslint" "babel-preset-es2015" "babel-preset-stage-0"
+132 error node v6.10.0
+133 error npm  v3.10.10
+134 error code E404
+135 error 404 Registry returned 404 for GET on https://registry.npmjs.org/bable-eslint
+136 error 404
+137 error 404 'bable-eslint' is not in the npm registry.
+138 error 404 You should bug the author to publish it (or use the name yourself!)
+139 error 404 Note that you can also install from a
+140 error 404 tarball, folder, http url, or git url.
+141 verbose exit [ 1, true ]
