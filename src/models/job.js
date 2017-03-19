@@ -2,12 +2,15 @@ import mongoose from 'mongoose';
 let Schema = mongoose.Schema;
 
 let JobSchema = new Schema({
-  title:    String,
-  website:  String,
+  title:    {
+    type:     String,
+    required: true
+  },
+  applyUrl: String,
   type:     String,
-  city:     String,
   pay:      String,
-  status:   String
+  status:   String,
+  company:  {type: Schema.Types.ObjectId, ref: 'Company'}
 });
 
 module.exports = mongoose.model('Job', JobSchema);

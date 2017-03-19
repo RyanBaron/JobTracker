@@ -1,5 +1,5 @@
 {
-  "name": "jobtracker",
+  "name": "jobtracker-api",
   "version": "0.0.1",
   "description": "Job application tracking",
   "main": "dist",

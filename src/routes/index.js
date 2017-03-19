@@ -2,7 +2,7 @@ import express      from 'express';
 import config       from '../config';
 import middleware   from '../middleware';
 import initializeDb from '../db';
-import job          from '../controller/job';
+import job          from '../controller/company';
 
 let router = express();
 
@@ -14,7 +14,7 @@ initializeDb(db => {
   router.use(middleware({config, db}));
 
   //api routes vw (/v1)
-  router.use('/job', job({config, db}));
+  router.use('/company', job({config, db}));
 
 });
 
