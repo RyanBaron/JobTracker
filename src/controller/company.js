@@ -54,7 +54,7 @@ export default({config, db}) => {
   });
 
   //'v1/company/:id' - Update
-  api.put('/:id', (req, res) => {
+  api.put('/:id', authenticate, (req, res) => {
     Company.findById(req.params.id, (err, company) => {
       if(err) {
         res.send(err);
@@ -72,7 +72,7 @@ export default({config, db}) => {
   });
 
   //'v1/company/:id' - Delete
-  api.delete("/:id", (req, res) => {
+  api.delete("/:id", authenticate, (req, res) => {
     Company.remove({
         _id: req.params.id
     }, (err, company) => {
@@ -85,7 +85,7 @@ export default({config, db}) => {
   });
 
   //'/v1/company/job/add/:id' - create
-  api.post('/job/add/:id', (req, res) => {
+  api.post('/job/add/:id', authenticate, (req, res) => {
     Company.findById(req.params.id, (err, company) => {
       if(err){
         res.send(err);
