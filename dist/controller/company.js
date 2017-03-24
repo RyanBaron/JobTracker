@@ -38,7 +38,8 @@ exports.default = function (_ref) {
     newCompany.url = req.body.url;
     newCompany.city = req.body.city;
     newCompany.state = req.body.state;
-    newCompany.geometry.coordinates = req.body.geometry.coordinates;
+    newCompany.geometry.coordinates.lat = req.body.geometry.coordinates.lat;
+    newCompany.geometry.coordinates.long = req.body.geometry.coordinates.long;
 
     newCompany.save(function (err) {
       if (err) {
@@ -76,10 +77,17 @@ exports.default = function (_ref) {
   api.put('/:id', _authMiddleware.authenticate, function (req, res) {
     _company2.default.findById(req.params.id, function (err, company) {
       if (err) {
-        res.send(err);
+        res.status(500).send(err);
+        return;
       }
 
-      company.title = req.body.name;
+      company.name = req.body.name;
+      company.url = req.body.url;
+      company.city = req.body.city;
+      company.state = req.body.state;
+      company.geometry.coordinates.lat = req.body.geometry.coordinates.lat;
+      company.geometry.coordinates.long = req.body.geometry.coordinates.long;
+
       company.save(function (err) {
         if (err) {
           res.send(err);
@@ -92,14 +100,33 @@ exports.default = function (_ref) {
 
   //'v1/company/:id' - Delete
   api.delete("/:id", _authMiddleware.authenticate, function (req, res) {
-    _company2.default.remove({
-      _id: req.params.id
-    }, function (err, company) {
+    _company2.default.findById(req.params.id, function (err, company) {
       if (err) {
-        res.send(err);
+        res.status(500).send(err);
+        return;
       }
-      //send back a job deleted success message
-      res.json({ message: "Company successfully removed!" });
+      if (company === null) {
+        res.status(404).send("Company Not found");
+        return;
+      }
+      _company2.default.remove({
+        _id: req.params.id
+      }, function (err, company) {
+        if (err) {
+          res.status(500).send(err);
+          return;
+        }
+        //remove company jobs if we are removing a company
+        _job2.default.remove({
+          company: req.params.id
+        }, function (err, job) {
+          if (err) {
+            res.send(err);
+          }
+          //send back a job deleted success message
+          res.json({ message: "Company successfully removed!" });
+        });
+      });
     });
   });
 

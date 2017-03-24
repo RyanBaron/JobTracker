@@ -61,6 +61,6 @@ app.use('/jobtracker/api/v1', _routes2.default);
 
 app.server.listen(_config2.default.port);
 //console.log("Started on port: " + app.server.address().port);
-console.log("started on port: " + _config2.default.port);
+//console.log("started on port: " + config.port);
 exports.default = app;
 //# sourceMappingURL=index.js.map
