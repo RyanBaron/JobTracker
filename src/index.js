@@ -1,7 +1,7 @@
 import http       from 'http';
 import express    from 'express';
 import bodyParser from 'body-parser';
-import mongoose   from 'mongoose'; 
+import mongoose   from 'mongoose';
 import passport   from 'passport';
 const LocalStrategy = require('passport-local').Strategy; //delare our local strategry variable
 
@@ -34,6 +34,6 @@ passport.deserializeUser(Account.deserializeUser());
 app.use('/jobtracker/api/v1', routes);
 
 app.server.listen(config.port);
-//console.log("Started on port: " + app.server.address().port);
+console.log("Started on port: " + app.server.address().port);
 //console.log("started on port: " + config.port);
 export default app;

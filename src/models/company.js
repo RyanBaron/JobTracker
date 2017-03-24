@@ -20,7 +20,10 @@ let CompanySchema = new Schema({
     type: {
       type: String, default: 'Point'
     },
-    coordinates: [Number]
+    coordinates: {
+      "lat": Number,
+      "long": Number,
+    }
   }
 });
 
