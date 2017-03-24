@@ -34,6 +34,6 @@ passport.deserializeUser(Account.deserializeUser());
 app.use('/jobtracker/api/v1', routes);
 
 app.server.listen(config.port);
-console.log("Started on port: " + app.server.address().port);
-
+//console.log("Started on port: " + app.server.address().port);
+//console.log("started on port: " + config.port);
 export default app;
