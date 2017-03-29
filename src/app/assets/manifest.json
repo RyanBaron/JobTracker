@@ -1,0 +1,53 @@
+{
+  "dependencies": {
+    "angular.js": {
+      "bower": ["angular"]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "app.js": {
+      "files": [
+        "scripts/app.js"
+      ],
+      "main": true
+    },
+    "controllers.js": {
+      "files": [
+        "scripts/controllers/controllers.js"
+      ],
+      "main": true
+    },
+    "services.js": {
+      "files": [
+        "scripts/services/services.js"
+      ],
+      "main": true
+    },
+    "directives.js": {
+      "files": [
+        "scripts/directives/directives.js"
+      ],
+      "main": true
+    },
+    "filters.js": {
+      "files": [
+        "scripts/filters/filters.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    }
+  },
+  "config": {
+    "devUrl": "http://localhost/positioning-guide"
+  },
+  "paths": {
+    "source": "src/assets/",
+    "dist": "dist/app/"
+}
+}

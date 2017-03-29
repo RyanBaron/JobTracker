@@ -28,9 +28,13 @@ var _config = require('./config');
 
 var _config2 = _interopRequireDefault(_config);
 
-var _routes = require('./routes');
+var _routes = require('./api/routes');
 
 var _routes2 = _interopRequireDefault(_routes);
+
+var _routes3 = require('./app/routes');
+
+var _routes4 = _interopRequireDefault(_routes3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -47,7 +51,7 @@ app.use(_bodyParser2.default.json({
 
 //passport config
 app.use(_passport2.default.initialize());
-var Account = require('./models/account');
+var Account = require('./api/models/account');
 _passport2.default.use(new LocalStrategy({
   usernameField: 'email',
   passwordField: 'password'
@@ -56,11 +60,28 @@ _passport2.default.use(new LocalStrategy({
 _passport2.default.serializeUser(Account.serializeUser());
 _passport2.default.deserializeUser(Account.deserializeUser());
 
+//console.log('ANGULER ORUTES', angularRoutes);
+//angular routes
+
+
 //api routes v1
 app.use('/jobtracker/api/v1', _routes2.default);
 
+//angular routes
+app.use('/', _routes4.default);
+/*
+app.use('/', function(req, res) {
+  console.log('in the /app route');
+  //console.log(res);
+  res.sendFile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+*/
+//app.use('/app', angularRoutes);
+
+//console.log(app);
+
 app.server.listen(_config2.default.port);
-//console.log("Started on port: " + app.server.address().port);
+console.log("Started on port: " + app.server.address().port);
 //console.log("started on port: " + config.port);
 exports.default = app;
 //# sourceMappingURL=index.js.map
